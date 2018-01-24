@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    @IBOutlet var settingsView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,10 @@ class SettingsViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(defaultTipControl.selectedSegmentIndex, forKey: "defaultTipControlIndex")
         defaults.synchronize()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.settingsView.backgroundColor = UIColor.green
+            self.settingsView.backgroundColor = UIColor.white
+        })
     }
     
     

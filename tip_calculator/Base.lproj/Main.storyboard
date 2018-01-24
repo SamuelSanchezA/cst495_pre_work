@@ -150,6 +150,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="UhH-8y-afe"/>
                     <connections>
                         <outlet property="defaultTipControl" destination="8aG-Wk-6qa" id="yhW-Ni-8FH"/>
+                        <outlet property="settingsView" destination="d8a-4u-nN7" id="wHf-kS-tDq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nq-Uy-aHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
